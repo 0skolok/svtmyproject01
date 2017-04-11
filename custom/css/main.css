@@ -9,6 +9,9 @@ tr td:first-child {
 .table-honor thead tr th {
     border: 1px solid rgba(0,0,0,0.06);
 }
+.table-honor thead {
+    margin-right: 15px;
+}
 
 /* overflow table */
 .table-fixed {
