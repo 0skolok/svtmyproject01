@@ -69,32 +69,22 @@ if ($APPLICATION->GetCurPage(false) === SITE_DIR)
 		</div>
 	</header>
 
-	<!-- Nav -->
-	<nav id="nav">
-		<ul>
-			<li class="current"><a href="<?=SITE_TEMPLATE_PATH?>index.html">Home</a></li>
-			<li>
-				<a href="#">Dropdown</a>
-				<ul>
-					<li><a href="#">Lorem ipsum dolor</a></li>
-					<li><a href="#">Magna phasellus</a></li>
-					<li>
-						<a href="#">Phasellus consequat</a>
-						<ul>
-							<li><a href="#">Lorem ipsum dolor</a></li>
-							<li><a href="#">Phasellus consequat</a></li>
-							<li><a href="#">Magna phasellus</a></li>
-							<li><a href="#">Etiam dolore nisl</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Veroeros feugiat</a></li>
-				</ul>
-			</li>
-			<li><a href="<?=SITE_TEMPLATE_PATH?>left-sidebar.html">Left Sidebar</a></li>
-			<li><a href="<?=SITE_TEMPLATE_PATH?>right-sidebar.html">Right Sidebar</a></li>
-			<li><a href="<?=SITE_TEMPLATE_PATH?>no-sidebar.html">No Sidebar</a></li>
-		</ul>
-	</nav>
+	<?$APPLICATION->IncludeComponent("bitrix:menu", "main", Array(
+		"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+		"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
+		"DELAY" => "N",	// Откладывать выполнение шаблона меню
+		"MAX_LEVEL" => "3",	// Уровень вложенности меню
+		"MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
+			0 => "",
+		),
+		"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
+		"MENU_CACHE_TYPE" => "N",	// Тип кеширования
+		"MENU_CACHE_USE_GROUPS" => "N",	// Учитывать права доступа
+		"ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
+		"USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
+	),
+		false
+	);?>
 
 	<? if ($isMainPage): ?>
 		<!-- Banner -->
