@@ -109,7 +109,17 @@ if ($APPLICATION->GetCurPage(false) === SITE_DIR)
 <div class="container">
 
 	<? if (!$isMainPage): ?>
-		<h1 class="my-4"><? $APPLICATION->ShowTitle(false); ?></h1>
+		<h1 class="mt-4 mb-3"><? $APPLICATION->ShowTitle(false); ?></h1>
+
+		<?$APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb",
+	"",
+			Array(
+				"PATH" => "",
+				"SITE_ID" => "s1",
+				"START_FROM" => "0"
+			)
+		);?>
 	<? endif; ?>
 
 	<? if ($isMainPage): ?>
