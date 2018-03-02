@@ -1,207 +1,182 @@
 <?
-require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
-?>
-	<div class="row 200%">
-		<div class="12u">
-
-			<!-- Highlight -->
-			<section class="box highlight">
-				<ul class="special">
-					<li><a href="#" class="icon fa-search"><span class="label">Magnifier</span></a></li>
-					<li><a href="#" class="icon fa-tablet"><span class="label">Tablet</span></a></li>
-					<li><a href="#" class="icon fa-flask"><span class="label">Flask</span></a></li>
-					<li><a href="#" class="icon fa-cog"><span class="label">Cog?</span></a></li>
-				</ul>
-				<header>
-					<h2>A random assortment of icons in circles</h2>
-					<p>And some text that attempts to explain their significance</p>
-				</header>
-				<p>
-					Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. Praesent semper mod quis
-					eget mi. Etiam eu<br/>
-					ante risus. Aliquam erat volutpat. Aliquam luctus et mattis lectus amet pulvinar. Nam nec turpis
-					consequat.
-				</p>
-			</section>
-
-		</div>
-	</div>
-	<div class="row 200%">
-		<div class="12u">
-
-			<!-- Features -->
-			<section class="box features">
-				<h2 class="major"><span>A Major Heading</span></h2>
-				<div>
-					<div class="row">
-						<div class="3u 12u(mobile)">
-
-							<!-- Feature -->
-							<section class="box feature">
-								<a href="#" class="image featured"><img
-											src="local/templates/main/struct/images/pic01.jpg" alt=""/></a>
-								<h3><a href="#">A Subheading</a></h3>
-								<p>
-									Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-									lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-								</p>
-							</section>
-
-						</div>
-						<div class="3u 12u(mobile)">
-
-							<!-- Feature -->
-							<section class="box feature">
-								<a href="#" class="image featured"><img
-											src="local/templates/main/struct/images/pic02.jpg" alt=""/></a>
-								<h3><a href="#">Another Subheading</a></h3>
-								<p>
-									Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-									lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-								</p>
-							</section>
-
-						</div>
-						<div class="3u 12u(mobile)">
-
-							<!-- Feature -->
-							<section class="box feature">
-								<a href="#" class="image featured"><img
-											src="local/templates/main/struct/images/pic03.jpg" alt=""/></a>
-								<h3><a href="#">And Another</a></h3>
-								<p>
-									Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-									lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-								</p>
-							</section>
-
-						</div>
-						<div class="3u 12u(mobile)">
-
-							<!-- Feature -->
-							<section class="box feature">
-								<a href="#" class="image featured"><img
-											src="local/templates/main/struct/images/pic04.jpg" alt=""/></a>
-								<h3><a href="#">And One More</a></h3>
-								<p>
-									Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in
-									lectus dolore. Praesent semper mod quis eget sed etiam eu ante risus.
-								</p>
-							</section>
-
-						</div>
-					</div>
-					<div class="row">
-						<div class="12u">
-							<ul class="actions">
-								<li><a href="#" class="button big">Do Something</a></li>
-								<li><a href="#" class="button alt big">Think About It</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</div>
-	</div>
-	<div class="row 200%">
-		<div class="12u">
-
-			<!-- Blog -->
-			<section class="box blog">
-				<h2 class="major"><span>Another Major Heading</span></h2>
-				<div>
-					<div class="row">
-						<div class="9u 12u(mobile)">
-							<div class="content content-left">
-
-								<!-- Featured Post -->
-								<article class="box post">
-									<header>
-										<h3><a href="#">Here's a really big heading</a></h3>
-										<p>With a smaller subtitle that attempts to elaborate</p>
-										<ul class="meta">
-											<li class="icon fa-clock-o">15 minutes ago</li>
-											<li class="icon fa-comments"><a href="#">8</a></li>
-										</ul>
-									</header>
-									<a href="#" class="image featured"><img
-												src="local/templates/main/struct/images/pic05.jpg" alt=""/></a>
-									<p>
-										Phasellus quam turpis, feugiat sit amet ornare in, a hendrerit in lectus.
-										Praesent
-										semper mod quis eget mi. Etiam sed ante risus aliquam erat et volutpat. Praesent
-										a
-										dapibus velit. Curabitur sed nisi nunc, accumsan vestibulum lectus. Lorem ipsum
-										dolor sit non aliquet sed, tempor et dolor. Praesent a dapibus velit. Curabitur
-										accumsan.
-									</p>
-									<a href="#" class="button">Continue Reading</a>
-								</article>
-
-							</div>
-						</div>
-						<div class="3u 12u(mobile)">
-							<div class="sidebar">
-
-								<!-- Archives -->
-								<ul class="divided">
-									<li>
-										<article class="box post-summary">
-											<h3><a href="#">A Subheading</a></h3>
-											<ul class="meta">
-												<li class="icon fa-clock-o">6 hours ago</li>
-												<li class="icon fa-comments"><a href="#">34</a></li>
-											</ul>
-										</article>
-									</li>
-									<li>
-										<article class="box post-summary">
-											<h3><a href="#">Another Subheading</a></h3>
-											<ul class="meta">
-												<li class="icon fa-clock-o">9 hours ago</li>
-												<li class="icon fa-comments"><a href="#">27</a></li>
-											</ul>
-										</article>
-									</li>
-									<li>
-										<article class="box post-summary">
-											<h3><a href="#">And Another</a></h3>
-											<ul class="meta">
-												<li class="icon fa-clock-o">Yesterday</li>
-												<li class="icon fa-comments"><a href="#">184</a></li>
-											</ul>
-										</article>
-									</li>
-									<li>
-										<article class="box post-summary">
-											<h3><a href="#">And Another</a></h3>
-											<ul class="meta">
-												<li class="icon fa-clock-o">2 days ago</li>
-												<li class="icon fa-comments"><a href="#">286</a></li>
-											</ul>
-										</article>
-									</li>
-									<li>
-										<article class="box post-summary">
-											<h3><a href="#">And One More</a></h3>
-											<ul class="meta">
-												<li class="icon fa-clock-o">3 days ago</li>
-												<li class="icon fa-comments"><a href="#">8,086</a></li>
-											</ul>
-										</article>
-									</li>
-								</ul>
-								<a href="#" class="button alt">Browse Archives</a>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-		</div>
-	</div>
-
-<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("description", "Данный онлайн сервис предоставляет услуги по обучению и возможности самообучения по предоставленным курсам");
+$APPLICATION->SetTitle("Modern Online Education");
+?><?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.section", 
+	".default", 
+	array(
+		"ACTION_VARIABLE" => "action",
+		"ADD_PROPERTIES_TO_BASKET" => "Y",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"BACKGROUND_IMAGE" => "-",
+		"BASKET_URL" => "/personal/basket.php",
+		"BROWSER_TITLE" => "-",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "36000000",
+		"CACHE_TYPE" => "A",
+		"COMPATIBLE_MODE" => "Y",
+		"CONVERT_CURRENCY" => "N",
+		"CUSTOM_FILTER" => "",
+		"DETAIL_URL" => "",
+		"DISABLE_INIT_JS_IN_COMPONENT" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"DISPLAY_COMPARE" => "N",
+		"DISPLAY_TOP_PAGER" => "N",
+		"ELEMENT_SORT_FIELD" => "sort",
+		"ELEMENT_SORT_FIELD2" => "id",
+		"ELEMENT_SORT_ORDER" => "asc",
+		"ELEMENT_SORT_ORDER2" => "desc",
+		"FILTER_NAME" => "arrFilter",
+		"HIDE_NOT_AVAILABLE" => "N",
+		"HIDE_NOT_AVAILABLE_OFFERS" => "N",
+		"IBLOCK_ID" => "2",
+		"IBLOCK_TYPE" => "products",
+		"INCLUDE_SUBSECTIONS" => "Y",
+		"LINE_ELEMENT_COUNT" => "4",
+		"MESSAGE_404" => "",
+		"META_DESCRIPTION" => "-",
+		"META_KEYWORDS" => "-",
+		"OFFERS_LIMIT" => "5",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TITLE" => "Товары",
+		"PAGE_ELEMENT_COUNT" => "4",
+		"PARTIAL_PRODUCT_PROPERTIES" => "N",
+		"PRICE_CODE" => array(
+		),
+		"PRICE_VAT_INCLUDE" => "Y",
+		"PRODUCT_ID_VARIABLE" => "id",
+		"PRODUCT_PROPERTIES" => array(
+		),
+		"PRODUCT_PROPS_VARIABLE" => "prop",
+		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"SECTION_CODE" => "",
+		"SECTION_ID" => "",
+		"SECTION_ID_VARIABLE" => "SECTION_ID",
+		"SECTION_URL" => "",
+		"SECTION_USER_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
+		"SEF_MODE" => "N",
+		"SET_BROWSER_TITLE" => "Y",
+		"SET_LAST_MODIFIED" => "N",
+		"SET_META_DESCRIPTION" => "Y",
+		"SET_META_KEYWORDS" => "Y",
+		"SET_STATUS_404" => "N",
+		"SET_TITLE" => "Y",
+		"SHOW_404" => "N",
+		"SHOW_ALL_WO_SECTION" => "Y",
+		"SHOW_PRICE_COUNT" => "1",
+		"USE_MAIN_ELEMENT_SECTION" => "N",
+		"USE_PRICE_COUNT" => "N",
+		"USE_PRODUCT_QUANTITY" => "N",
+		"TITLE" => "Популярные",
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
+);?><br>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.section", 
+	".default", 
+	array(
+		"ACTION_VARIABLE" => "action",
+		"ADD_PROPERTIES_TO_BASKET" => "Y",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"BACKGROUND_IMAGE" => "-",
+		"BASKET_URL" => "/personal/basket.php",
+		"BROWSER_TITLE" => "-",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "36000000",
+		"CACHE_TYPE" => "A",
+		"COMPATIBLE_MODE" => "Y",
+		"CONVERT_CURRENCY" => "N",
+		"CUSTOM_FILTER" => "",
+		"DETAIL_URL" => "",
+		"DISABLE_INIT_JS_IN_COMPONENT" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"DISPLAY_COMPARE" => "N",
+		"DISPLAY_TOP_PAGER" => "N",
+		"ELEMENT_SORT_FIELD" => "sort",
+		"ELEMENT_SORT_FIELD2" => "id",
+		"ELEMENT_SORT_ORDER" => "asc",
+		"ELEMENT_SORT_ORDER2" => "desc",
+		"FILTER_NAME" => "arrFilter",
+		"HIDE_NOT_AVAILABLE" => "N",
+		"HIDE_NOT_AVAILABLE_OFFERS" => "N",
+		"IBLOCK_ID" => "2",
+		"IBLOCK_TYPE" => "products",
+		"INCLUDE_SUBSECTIONS" => "Y",
+		"LINE_ELEMENT_COUNT" => "4",
+		"MESSAGE_404" => "",
+		"META_DESCRIPTION" => "-",
+		"META_KEYWORDS" => "-",
+		"OFFERS_LIMIT" => "5",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TITLE" => "Товары",
+		"PAGE_ELEMENT_COUNT" => "4",
+		"PARTIAL_PRODUCT_PROPERTIES" => "N",
+		"PRICE_CODE" => array(
+		),
+		"PRICE_VAT_INCLUDE" => "Y",
+		"PRODUCT_ID_VARIABLE" => "id",
+		"PRODUCT_PROPERTIES" => array(
+		),
+		"PRODUCT_PROPS_VARIABLE" => "prop",
+		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"SECTION_CODE" => "",
+		"SECTION_ID" => "",
+		"SECTION_ID_VARIABLE" => "SECTION_ID",
+		"SECTION_URL" => "",
+		"SECTION_USER_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
+		"SEF_MODE" => "N",
+		"SET_BROWSER_TITLE" => "Y",
+		"SET_LAST_MODIFIED" => "N",
+		"SET_META_DESCRIPTION" => "Y",
+		"SET_META_KEYWORDS" => "Y",
+		"SET_STATUS_404" => "N",
+		"SET_TITLE" => "Y",
+		"SHOW_404" => "N",
+		"SHOW_ALL_WO_SECTION" => "Y",
+		"SHOW_PRICE_COUNT" => "1",
+		"USE_MAIN_ELEMENT_SECTION" => "N",
+		"USE_PRICE_COUNT" => "N",
+		"USE_PRODUCT_QUANTITY" => "N",
+		"TITLE" => "Новинки",
+		"COMPONENT_TEMPLATE" => ".default"
+	),
+	false
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

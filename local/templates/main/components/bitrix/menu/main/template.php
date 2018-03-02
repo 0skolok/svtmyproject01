@@ -1,24 +1,25 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 {
 	die();
-} ?>
+}
+?>
 
 <? if ($arResult): ?>
-	<!-- Nav -->
 	<nav id="nav">
 		<ul>
-			<? foreach ($arResult as $arItem):
-				if ($arParams["MAX_LEVEL"] == 1 && $arItem["DEPTH_LEVEL"] > 1)
-				{
-					continue;
-				}
-				?>
-				<? if ($arItem["SELECTED"]): ?>
-				<li class="current"><a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a></li>
-			<? else: ?>
-				<li><a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a></li>
-			<? endif ?>
-
+			<? foreach ($arResult as $arItem): ?>
+				<li <? if ($arItem["SELECTED"]): ?>class="current"<? endif; ?>>
+					<a href="<?=$arItem["LINK"]; ?>"><?=$arItem["TEXT"]; ?></a>
+					<? if ($arItem['ITEMS']): ?>
+						<ul>
+						<? foreach ($arItem['ITEMS'] as $itemId => $item): ?>
+							<li <? if ($item["SELECTED"]): ?>class="current"<? endif; ?>>
+								<a href="<?=$item['LINK']; ?>"><?=$item['TEXT']; ?></a>
+							</li>
+						<? endforeach ?>
+						</ul>
+					<? endif; ?>
+				</li>
 			<? endforeach ?>
 		</ul>
 	</nav>

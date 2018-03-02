@@ -1,0 +1,1 @@
+<p class="m-0 text-center text-white">Copyright &copy; Modern Online Education 2018</p>
