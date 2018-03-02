@@ -1,1 +1,1 @@
-<img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+<img class="img-fluid rounded" src="/local/templates/edu/images/no-photo/700x450.png" alt="">
