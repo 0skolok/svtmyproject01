@@ -31,7 +31,7 @@ if ($APPLICATION->GetCurPage(false) === SITE_DIR)
 	// Custom styles for this template
 	$assets->addCss(SITE_TEMPLATE_PATH . '/assets/css/modern-business.css');
 	$assets->addString('<link rel="shortcut icon" href="' .
-		CUtil::GetAdditionalFileURL(SITE_TEMPLATE_PATH . '/assets/images/favicon.ico') . '">', false,
+		CUtil::GetAdditionalFileURL(SITE_TEMPLATE_PATH . '/images/favicon.ico') . '">', false,
 		AssetLocation::AFTER_JS);
 
 	// Bootstrap core JavaScript
