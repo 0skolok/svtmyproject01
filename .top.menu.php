@@ -1,11 +1,18 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Главная",
-		"/",
-		Array(),
-		Array(),
-		""
+		"Главная", 
+		"/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Новости", 
+		"/news/", 
+		Array(), 
+		Array(), 
+		"" 
 	),
 	Array(
 		"Курсы", 
@@ -15,11 +22,11 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Рейтинг",
-		"/rating/",
-		Array(),
-		Array(),
-		""
+		"Рейтинг", 
+		"/rating/", 
+		Array(), 
+		Array(), 
+		"" 
 	),
 	Array(
 		"Личный кабинет", 
