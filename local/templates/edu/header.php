@@ -221,7 +221,7 @@ if ($APPLICATION->GetCurPage(false) === SITE_DIR)
 		"CUSTOM_FILTER" => "",
 		"DETAIL_URL" => "",
 		"DISABLE_INIT_JS_IN_COMPONENT" => "N",
-		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"DISPLAY_BOTTOM_PAGER" => "N",
 		"DISPLAY_COMPARE" => "N",
 		"DISPLAY_TOP_PAGER" => "N",
 		"ELEMENT_SORT_FIELD" => "shows",
