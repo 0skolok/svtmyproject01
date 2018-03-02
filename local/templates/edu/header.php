@@ -178,76 +178,112 @@ if ($APPLICATION->GetCurPage(false) === SITE_DIR)
 				"TITLE" => "Новости"
 			)
 		);?>
-		<!-- Portfolio Section -->
-		<h2 class="my-4">Portfolio Heading</h2>
 
-		<div class="row">
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project One</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Two</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Three</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Four</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Five</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6 portfolio-item">
-				<div class="card h-100">
-					<a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title">
-							<a href="#">Project Six</a>
-						</h4>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /.row -->
+		<?$APPLICATION->IncludeComponent(
+			"bitrix:catalog.section",
+			"main",
+			Array(
+				"ACTION_VARIABLE" => "action",
+				"ADD_PICT_PROP" => "-",
+				"ADD_PROPERTIES_TO_BASKET" => "Y",
+				"ADD_SECTIONS_CHAIN" => "N",
+				"ADD_TO_BASKET_ACTION" => "ADD",
+				"AJAX_MODE" => "N",
+				"AJAX_OPTION_ADDITIONAL" => "",
+				"AJAX_OPTION_HISTORY" => "N",
+				"AJAX_OPTION_JUMP" => "N",
+				"AJAX_OPTION_STYLE" => "N",
+				"BACKGROUND_IMAGE" => "-",
+				"BASKET_URL" => "/personal/basket/",
+				"BROWSER_TITLE" => "-",
+				"CACHE_FILTER" => "N",
+				"CACHE_GROUPS" => "N",
+				"CACHE_TIME" => "36000000",
+				"CACHE_TYPE" => "A",
+				"COMPATIBLE_MODE" => "Y",
+				"COMPONENT_TEMPLATE" => "main",
+				"CONVERT_CURRENCY" => "N",
+				"CUSTOM_FILTER" => "",
+				"DETAIL_URL" => "",
+				"DISABLE_INIT_JS_IN_COMPONENT" => "N",
+				"DISPLAY_BOTTOM_PAGER" => "Y",
+				"DISPLAY_COMPARE" => "N",
+				"DISPLAY_TOP_PAGER" => "N",
+				"ELEMENT_SORT_FIELD" => "shows",
+				"ELEMENT_SORT_FIELD2" => "id",
+				"ELEMENT_SORT_ORDER" => "desc",
+				"ELEMENT_SORT_ORDER2" => "desc",
+				"ENLARGE_PRODUCT" => "STRICT",
+				"FILTER_NAME" => "arrFilter",
+				"HIDE_NOT_AVAILABLE" => "N",
+				"HIDE_NOT_AVAILABLE_OFFERS" => "Y",
+				"IBLOCK_ID" => "2",
+				"IBLOCK_TYPE" => "products",
+				"INCLUDE_SUBSECTIONS" => "A",
+				"LABEL_PROP" => "",
+				"LAZY_LOAD" => "N",
+				"LINE_ELEMENT_COUNT" => "3",
+				"LOAD_ON_SCROLL" => "N",
+				"MESSAGE_404" => "",
+				"MESS_BTN_ADD_TO_BASKET" => "В корзину",
+				"MESS_BTN_BUY" => "Купить",
+				"MESS_BTN_DETAIL" => "Подробнее",
+				"MESS_BTN_SUBSCRIBE" => "Подписаться",
+				"MESS_NOT_AVAILABLE" => "Нет в наличии",
+				"META_DESCRIPTION" => "-",
+				"META_KEYWORDS" => "-",
+				"OFFERS_LIMIT" => "5",
+				"PAGER_BASE_LINK_ENABLE" => "N",
+				"PAGER_DESC_NUMBERING" => "N",
+				"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+				"PAGER_SHOW_ALL" => "N",
+				"PAGER_SHOW_ALWAYS" => "N",
+				"PAGER_TEMPLATE" => ".default",
+				"PAGER_TITLE" => "Товары",
+				"PAGE_ELEMENT_COUNT" => "3",
+				"PARTIAL_PRODUCT_PROPERTIES" => "N",
+				"PRICE_CODE" => array(),
+				"PRICE_VAT_INCLUDE" => "Y",
+				"PRODUCT_BLOCKS_ORDER" => "price,props,sku,quantityLimit,quantity,buttons,compare",
+				"PRODUCT_ID_VARIABLE" => "id",
+				"PRODUCT_PROPERTIES" => array(),
+				"PRODUCT_PROPS_VARIABLE" => "prop",
+				"PRODUCT_QUANTITY_VARIABLE" => "quantity",
+				"PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",
+				"PRODUCT_SUBSCRIPTION" => "Y",
+				"PROPERTY_CODE" => array(0=>"",1=>"",),
+				"PROPERTY_CODE_MOBILE" => "",
+				"RCM_PROD_ID" => "",
+				"RCM_TYPE" => "personal",
+				"SECTION_CODE" => "",
+				"SECTION_ID" => "",
+				"SECTION_ID_VARIABLE" => "SECTION_ID",
+				"SECTION_URL" => "",
+				"SECTION_USER_FIELDS" => array(0=>"",1=>"",),
+				"SEF_MODE" => "N",
+				"SET_BROWSER_TITLE" => "N",
+				"SET_LAST_MODIFIED" => "N",
+				"SET_META_DESCRIPTION" => "N",
+				"SET_META_KEYWORDS" => "N",
+				"SET_STATUS_404" => "N",
+				"SET_TITLE" => "N",
+				"SHOW_404" => "N",
+				"SHOW_ALL_WO_SECTION" => "Y",
+				"SHOW_CLOSE_POPUP" => "N",
+				"SHOW_DISCOUNT_PERCENT" => "N",
+				"SHOW_FROM_SECTION" => "N",
+				"SHOW_MAX_QUANTITY" => "N",
+				"SHOW_OLD_PRICE" => "N",
+				"SHOW_PRICE_COUNT" => "1",
+				"SHOW_SLIDER" => "N",
+				"SLIDER_INTERVAL" => "3000",
+				"SLIDER_PROGRESS" => "N",
+				"TEMPLATE_THEME" => "blue",
+				"TITLE" => "",
+				"USE_ENHANCED_ECOMMERCE" => "N",
+				"USE_MAIN_ELEMENT_SECTION" => "N",
+				"USE_PRICE_COUNT" => "N",
+				"USE_PRODUCT_QUANTITY" => "N"
+			)
+		);?>
 	<? endif; ?>
