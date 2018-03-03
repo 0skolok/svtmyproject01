@@ -21,11 +21,15 @@
 					<img class="card-img-top" src="<?=$arItem['RESIZE_PICTURE']['src']?>" alt="<?=$arItem['NAME']?>">
 				</a>
 				<div class="card-body">
-					<h4 class="card-title">
+					<h5 class="card-title">
 						<a href="<?=$arItem['DETAIL_PAGE_URL']?>"><?=$arItem['NAME']?></a>
-					</h4>
-					<? if ($arItem['MIN_PRICE']['PRINT_DISCOUNT_VALUE']): ?>
-						<h5><?=$arItem['MIN_PRICE']['PRINT_DISCOUNT_VALUE']?></h5>
+					</h5>
+					<?
+					$price = ($arItem['MIN_PRICE']['VALUE'] == 0) ? 'Бесплатно' :
+						$arItem['MIN_PRICE']['PRINT_DISCOUNT_VALUE'];
+					?>
+					<? if ($price): ?>
+						<h6><?=$price?></h6>
 					<? endif; ?>
 					<p class="card-text">
 						<?=TruncateText($arItem['PREVIEW_TEXT'], 100)?>
