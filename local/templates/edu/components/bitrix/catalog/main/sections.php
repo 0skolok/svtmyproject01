@@ -7,43 +7,30 @@
 
 	<div class="col-lg-3">
 
-		<div class="list-group">
-			<a href="#" class="list-group-item">Category 1</a>
-			<a href="#" class="list-group-item">Category 2</a>
-			<a href="#" class="list-group-item">Category 3</a>
-		</div>
+		<?$APPLICATION->IncludeComponent(
+	"bitrix:menu", 
+	"catalog", 
+			array(
+				"ALLOW_MULTI_SELECT" => "N",
+				"CHILD_MENU_TYPE" => "",
+				"DELAY" => "N",
+				"MAX_LEVEL" => "3",
+				"MENU_CACHE_GET_VARS" => array(
+				),
+				"MENU_CACHE_TIME" => "3600",
+				"MENU_CACHE_TYPE" => "N",
+				"MENU_CACHE_USE_GROUPS" => "N",
+				"ROOT_MENU_TYPE" => "catalog",
+				"USE_EXT" => "N",
+				"COMPONENT_TEMPLATE" => "catalog"
+			),
+			$component
+		);?>
 
 	</div>
 	<!-- /.col-lg-3 -->
 
 	<div class="col-lg-9">
-
-		<div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner" role="listbox">
-				<div class="carousel-item active">
-					<img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
-				</div>
-				<div class="carousel-item">
-					<img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
-				</div>
-				<div class="carousel-item">
-					<img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
-				</div>
-			</div>
-			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
 
 		<div class="row">
 			<? $intSectionID = $APPLICATION->IncludeComponent(

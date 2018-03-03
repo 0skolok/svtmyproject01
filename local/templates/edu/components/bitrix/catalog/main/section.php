@@ -9,7 +9,37 @@ $assets = Asset::getInstance();
 
 $assets->addCss(SITE_TEMPLATE_PATH . '/assets/css/shop-homepage.css');
 ?>
-<? $intSectionID = $APPLICATION->IncludeComponent(
+	<div class="row">
+
+	<div class="col-lg-3">
+
+		<?$APPLICATION->IncludeComponent(
+			"bitrix:menu",
+			"catalog",
+			array(
+				"ALLOW_MULTI_SELECT" => "N",
+				"CHILD_MENU_TYPE" => "",
+				"DELAY" => "N",
+				"MAX_LEVEL" => "3",
+				"MENU_CACHE_GET_VARS" => array(
+				),
+				"MENU_CACHE_TIME" => "3600",
+				"MENU_CACHE_TYPE" => "N",
+				"MENU_CACHE_USE_GROUPS" => "N",
+				"ROOT_MENU_TYPE" => "catalog",
+				"USE_EXT" => "N",
+				"COMPONENT_TEMPLATE" => "catalog"
+			),
+			$component
+		);?>
+
+	</div>
+	<!-- /.col-lg-3 -->
+
+	<div class="col-lg-9">
+
+		<div class="row">
+			<? $intSectionID = $APPLICATION->IncludeComponent(
 	"bitrix:catalog.section",
 	"",
 	array(
@@ -146,5 +176,10 @@ $assets->addCss(SITE_TEMPLATE_PATH . '/assets/css/shop-homepage.css');
 			? $arParams['DISABLE_INIT_JS_IN_COMPONENT'] : '')
 	),
 	$component
-);
-?>
+); ?>
+		</div>
+	</div>
+		<!-- /.row -->
+
+</div>
+<!-- /.col-lg-9 -->
