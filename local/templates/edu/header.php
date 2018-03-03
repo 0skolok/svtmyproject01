@@ -29,7 +29,15 @@ if ($APPLICATION->GetCurPage(false) === SITE_DIR)
 	$assets->addCss(SITE_TEMPLATE_PATH . '/assets/vendor/bootstrap/css/bootstrap.min.css');
 
 	// Custom styles for this template
-	$assets->addCss(SITE_TEMPLATE_PATH . '/assets/css/modern-business.css');
+	if ($APPLICATION->GetCurDir() === '/courses/catalog/')
+	{
+		$assets->addCss(SITE_TEMPLATE_PATH . '/assets/css/shop-homepage.css');
+	}
+	else
+	{
+		$assets->addCss(SITE_TEMPLATE_PATH . '/assets/css/modern-business.css');
+	}
+
 	$assets->addString('<link rel="shortcut icon" href="' .
 		CUtil::GetAdditionalFileURL(SITE_TEMPLATE_PATH . '/images/favicon.ico') . '">', false,
 		AssetLocation::AFTER_JS);
