@@ -1,0 +1,17 @@
+.help-block {
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1;
+    display: block;
+    margin-bottom: 0;
+    color: #787878;
+    bottom: -3px;
+    position: relative;
+}
+
+.detail-block {
+    background-color: rgba(88, 101, 109, 0.2);
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+}

@@ -27,6 +27,7 @@ if ($APPLICATION->GetCurPage(false) === SITE_DIR)
 
 	// Bootstrap core CSS
 	$assets->addCss(SITE_TEMPLATE_PATH . '/assets/vendor/bootstrap/css/bootstrap.min.css');
+	$assets->addCss(SITE_TEMPLATE_PATH . '/assets/font-awesome/css/font-awesome.min.css');
 
 	// Custom styles for this template
 	if ($APPLICATION->GetCurDir() === '/courses/catalog/')
@@ -37,6 +38,8 @@ if ($APPLICATION->GetCurPage(false) === SITE_DIR)
 	{
 		$assets->addCss(SITE_TEMPLATE_PATH . '/assets/css/modern-business.css');
 	}
+
+	$assets->addCss(SITE_TEMPLATE_PATH . '/css/main.css');
 
 	$assets->addString('<link rel="shortcut icon" href="' .
 		CUtil::GetAdditionalFileURL(SITE_TEMPLATE_PATH . '/images/favicon.ico') . '">', false,
