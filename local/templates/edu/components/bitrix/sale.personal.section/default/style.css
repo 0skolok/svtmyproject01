@@ -1,0 +1,11 @@
+.sale-personal-section-index-block-link,
+.sale-personal-section-index-block-link:hover,
+.sale-personal-section-index-block-link:active,
+.sale-personal-section-index-block-link:focus,
+.sale-personal-section-index-block-link:visited{
+	text-decoration: none;
+}
+.sale-personal-section-index-block-ico {font-size: 50px;}
+.sale-personal-section-index-block{
+	text-align: center;
+}

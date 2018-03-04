@@ -1,0 +1,10 @@
+#loading_screen {
+position: fixed;
+	z-index: 1150;
+	left: 50%;
+	top: 50%;
+	margin-left: -32px;
+	margin-top: -32px;
+	width: 64px;
+	height: 64px;
+}

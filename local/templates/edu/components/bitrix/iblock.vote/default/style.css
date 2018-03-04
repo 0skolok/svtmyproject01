@@ -1,0 +1,32 @@
+.iblock-vote .glyphicon-star,
+.iblock-vote .glyphicon-star-empty,
+.iblock-vote .fa-star,
+.iblock-vote .fa-star-o {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    position: relative;
+    width: 1em;
+    height: 1em;
+    padding-right: 0.1em;
+}
+
+.iblock-vote .rating-enabled span {
+    cursor: pointer;
+}
+
+.iblock-vote .glyphicon-star-empty,
+.iblock-vote .fa-star-o {
+    color: #999999;
+}
+
+.iblock-vote .glyphicon-star,
+.iblock-vote .fa-star {
+    color: #e3cf7a;
+}
+
+.iblock-vote .rating-star-hover {
+    color: #e3cf7a;
+}
+

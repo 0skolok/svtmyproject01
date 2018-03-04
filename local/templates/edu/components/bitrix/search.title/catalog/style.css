@@ -1,0 +1,9 @@
+.search-title-popover {
+    display: block !important;
+    position: relative !important;
+    max-width: none !important;
+}
+
+.title-search-preview {
+    display: block;
+}

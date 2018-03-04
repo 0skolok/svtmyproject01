@@ -1,0 +1,16 @@
+.catalog-section-list-alphabet-horizontal .abc-item {
+    padding: 15px 0;
+    border-top: #DDD 1px solid;
+}
+
+.catalog-section-list-alphabet-horizontal .abc-item:first-child {
+    border-top: none;
+}
+
+.catalog-section-list-alphabet-horizontal .abc-item .letter {
+    margin:0;
+}
+
+.catalog-section-list-alphabet-horizontal .abc-item .list-unstyled {
+    margin-bottom: 0;
+}
