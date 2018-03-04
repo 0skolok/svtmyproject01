@@ -2,9 +2,6 @@
 {
 	die();
 }
-echo "<pre style='font-size: 10px'>"
-    . "file: " . __FILE__ . "\nline: " . __LINE__ . "\n\n"
-    . print_r('test', true) . "</pre>";
 ?>
 
 <div class="table-responsive">

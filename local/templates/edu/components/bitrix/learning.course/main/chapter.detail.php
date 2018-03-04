@@ -2,12 +2,7 @@
 {
 	die();
 }
-echo "<pre style='font-size: 10px'>"
-    . "file: " . __FILE__ . "\nline: " . __LINE__ . "\n\n"
-    . print_r('chapter.detail', true) . "</pre>";
 ?>
-
-
 
 <div class="table-responsive">
 	<table class="table table-bordered">
